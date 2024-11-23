@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:solveit/screens/homepage.dart';
+import 'package:solveit/pages/homepage.dart';
 
 class SolveIt extends StatelessWidget {
   const SolveIt({super.key});
