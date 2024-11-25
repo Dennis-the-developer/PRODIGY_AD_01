@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class SelectColor {
   // Colors for light theme
-  final lightBackground = const Color.fromRGBO(249, 249, 251, 1);
-  final deepYellowLb = const Color.fromRGBO(253, 184, 45, 1);
+  final lightBackground = const Color.fromARGB(255, 208, 208, 240);
+  final deepYellowLb = const Color.fromARGB(255, 233, 162, 21);
   final lightYellowLb = const Color.fromRGBO(244, 239, 227, 1);
   final deepPurpleLb = const Color.fromRGBO(157, 70, 246, 1);
   final lightPurpleLb = const Color.fromRGBO(225, 214, 234, 1);

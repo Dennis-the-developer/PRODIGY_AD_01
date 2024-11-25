@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:solveit/common/styles/colors.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:solveit/states/culbit.dart';
 
 class OutputScreen extends StatelessWidget {
   const OutputScreen({super.key});
@@ -12,8 +13,19 @@ class OutputScreen extends StatelessWidget {
     return Container(
       width: w,
       height: h * 0.29,
+      margin: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: SelectColor().lightBackground,
+        color: Colors.white,
+        border: Border.all(color: Colors.black, width: 0.3),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Center(
+        child: BlocBuilder<CalCubit, List>(
+          builder: (context, state) {
+            debugPrint("OnScreen: ${state.toString()}");
+            return Text('$state');
+          },
+        ),
       ),
     );
   }
